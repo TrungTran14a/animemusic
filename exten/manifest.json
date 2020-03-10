@@ -1,0 +1,27 @@
+{
+
+    "manifest_version": 2,
+    "name": "aa",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "48": "con2.jpg"
+    },
+  
+    "content_scripts": [
+      {
+        "matches": ["*://*.myanimelist.net/*"],
+        
+        "js": ["aa.js"]
+       
+      }
+    ],
+    "applications": {
+      "gecko": {
+        "id": "admin@fsunny.com"
+      }
+    }
+  }
+  
