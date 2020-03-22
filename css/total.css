@@ -1,5 +1,27 @@
 @charset "utf-8";
 /* CSS Document */
+#a{
+width: 100%;
+height: 100%;
+background-image: url('../image/mbody/bac.jpg');
+position: fixed;
+background-size: cover;
+z-index: -9;
+	}
+#iffilm li b{
+	color:#66ceb1;
+	font-size:25px;
+	margin:0px 20px 0px 0px;
+	}
+#iffilm li {
+	margin:20px 0px 0px 0px;
+	font-size:20px;
+	}
+#iffilm{
+	width:100%;
+	height:auto;
+	
+	}
 #wp2{
 	display:none
 	}
@@ -516,7 +538,10 @@
 .bigback{
 	background-color:#373737;
 	}
+
+body{
 	
+	}
 @media screen and ( max-width: 576px ) {
 
 }

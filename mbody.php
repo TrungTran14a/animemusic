@@ -20,91 +20,28 @@
                 </div>
                 <!-- tung phim -->
                 <div  id="allf" class="row justify-content-around ">
+                <?php include('ketnoibh.php');
+					$sq = 'select * from film,photo where   photo.IdF = film.IdF';
+					$result = mysqli_query($conn, $sq);
+					while($row = mysqli_fetch_assoc($result)){ 
+					
+					?>
+					
                 	<div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="filmwall.php" class="linkfilm">
+                    	<a href="filmwall.php?o=<?php echo $row["IdF"];?>" class="linkfilm">
                             <div class="showep">
-                                <span>05/12</span>
+                                <span><?php echo $row["Eps"]; ?></span>
                             </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
+                            <div class="facefilm" style="background-image:url('<?php echo $row['NameP'];?>'); background-repeat:no-repeat; background-size:cover"></div>
                             <div class="namefilm" >
                                 <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
+                                    <?php echo $row["Namer"];?>
                                 </div>
                             </div>
                         </a>
-                    </div>       
-                    
-                    <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="#" class="linkfilm">
-                            <div class="showep">
-                                <span>05/12</span>
-                            </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
-                            <div class="namefilm" >
-                                <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
-                                </div>
-                            </div>
-                        </a>
-                    </div>       
-                    
-                    <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="#" class="linkfilm">
-                            <div class="showep">
-                                <span>05/12</span>
-                            </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
-                            <div class="namefilm" >
-                                <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
-                                </div>
-                            </div>
-                        </a>
-                    </div>       
-                    
-                    <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="#" class="linkfilm">
-                            <div class="showep">
-                                <span>05/12</span>
-                            </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
-                            <div class="namefilm" >
-                                <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
-                                </div>
-                            </div>
-                        </a>
-                    </div>       
-                    
-                    <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="#" class="linkfilm">
-                            <div class="showep">
-                                <span>05/12</span>
-                            </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
-                            <div class="namefilm" >
-                                <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
-                                </div>
-                            </div>
-                        </a>
-                    </div>       
-                    
-                    <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
-                    	<a href="#" class="linkfilm">
-                            <div class="showep">
-                                <span>05/12</span>
-                            </div>
-                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
-                            <div class="namefilm" >
-                                <div class="contnamefilm">
-                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
-                                </div>
-                            </div>
-                        </a>
-                    </div>       
-                    
-                    
+                    </div>   
+                    <?php } ?>        
+                     
                 </div>
                 <!-- hot film -->
                 <div class="row">
