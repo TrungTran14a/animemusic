@@ -57,10 +57,7 @@
       else
         stage.style.webkitTransform = '';
     }
-    function downloadLink()
-    {
-      location.href = 'http://redirect.nhq.vn/demo/3d-css.zip';
-    }
+    
   </script>
 </head>
 <body>
@@ -70,18 +67,15 @@
   <div id="container" onclick="toggleShape()">
     <div id="stage">
       <div id="shape" class="cube backfaces">
-        <div class="plane one" style="background-image: url(image/mbody/wall/5cm/1.jpg);"></div>
-        <div class="plane two" style="background-image: url(image/mbody/wall/5cm/2.jpg);"></div>
-        <div class="plane three" style="background-image: url(image/mbody/wall/5cm/3.jpg);"></div>
-        <div class="plane four" style="background-image: url(image/mbody/wall/5cm/4.jpg);"></div>
-        <div class="plane five" style="background-image: url(image/mbody/wall/5cm/5.jpg);"></div>
-        <div class="plane six" style="background-image: url(image/mbody/wall/5cm/6.jpg);"></div>
-        <div class="plane seven" style="background-image: url(image/mbody/wall/5cm/7.jpg);"></div>
-        <div class="plane eight" style="background-image: url(image/mbody/wall/5cm/8.jpg);"></div>
-        <div class="plane nine" style="background-image: url(image/mbody/wall/5cm/9.png);"></div>
-        <div class="plane ten" style="background-image: url(image/mbody/wall/5cm/10.jpg);"></div>
-        <div class="plane eleven" style="background-image: url(image/mbody/wall/5cm/11.jpg);"></div>
-        <div class="plane twelve" style="background-image: url(image/mbody/wall/5cm/12.jpg);"></div>
+	  <?php include('ketnoibh.php');
+	  		$get = $_GET['o'];
+	  		$r = "select * from film,wallpaper,num where film.IdF = $get and film.IdF = wallpaper.IdF = num.IdF ";
+			$kq=mysqli_query($conn,$r);
+			while($d = mysqli_fetch_array($kq)) 
+			{
+				?>
+     				<div class="plane m1" style="background-image: url(<?php echo $d['LinkW'];echo $d['NameW'];?>)"></div>
+       <?php }?>
       </div>
     </div>
   </div>
