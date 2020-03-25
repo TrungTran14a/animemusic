@@ -69,12 +69,15 @@
       <div id="shape" class="cube backfaces">
 	  <?php include('ketnoibh.php');
 	  		$get = $_GET['o'];
-	  		$r = "select * from film,wallpaper,num where film.IdF = $get and film.IdF = wallpaper.IdF = num.IdF ";
+	  		$r = "select * from wallpaper where wallpaper.IdF = $get ";
+			
 			$kq=mysqli_query($conn,$r);
-			while($d = mysqli_fetch_array($kq)) 
+			
+			while($d = mysqli_fetch_array($kq))
 			{
 				?>
-     				<div class="plane m1" style="background-image: url(<?php echo $d['LinkW'];echo $d['NameW'];?>)"></div>
+                
+     				<div class="plane m<?php echo $d['numW'];?>" style="background-image: url(<?php echo $d['LinkW'];echo $d['NameW'];?>)"></div>
        <?php }?>
       </div>
     </div>
