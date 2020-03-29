@@ -59,40 +59,18 @@ body {
   <a id="btnmenuclose" href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#9776 MENU</a>
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
     <div class="iconitemmenu">&#10017 </div>
-    <div class="itemmenu"> aaa</div>
+    <div class="itemmenu"> Genres</div>
     
   </button>
+  
+  <!-- genres films -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar1">
     <div class="allitemin">
-      <div class="itemdetail">
-        adult
-      </div>
-      <div class="itemdetail" >
-        comedy
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>
-      <div class="itemdetail" >
-        school life
-      </div>    
+      <?php include('genres/genres.php'); ?>
     </div>
   </div>  
+  
+  
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
   	<div class="iconitemmenu">&#10017 </div>
     <div class="itemmenu">aaa</div>
