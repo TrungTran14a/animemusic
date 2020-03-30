@@ -73,6 +73,7 @@ z-index: -9;
 	height:auto;
 	position:relative;
 	float:left;
+	min-height:600px;
 	
 	}
 .ava, #btnsong, #btnwallpaper, #btnxem{
@@ -156,8 +157,9 @@ z-index: -9;
 	
 	}
 .itemdetail:hover{
-	background-color:#274274;
+	background-color:#199981;
 	color:white;
+	cursor:pointer;
 	
 	}
 .itemdetail{
@@ -176,7 +178,8 @@ z-index: -9;
 	white-space: nowrap;
 	overflow:hidden;	
 	font-weight:bold;
-	
+	box-shadow: 3px 1px 7px -5px rgb(7, 2, 74);
+
 	}
 .navbar-toggler{
 	width:100%;
@@ -247,6 +250,7 @@ z-index: -9;
 	position:relative;
 	float:left;
 	bottom:0;
+	
 	}
 #optioninmore{
 	text-align:center;

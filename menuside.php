@@ -66,45 +66,52 @@ body {
   <!-- genres films -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar1">
     <div class="allitemin">
-      <?php include('genres/genres.php'); ?>
+      <?php include('menu/genres/genres.php'); ?>
     </div>
   </div>  
   
-  
+  <!-- season films -->
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
   	<div class="iconitemmenu">&#10017 </div>
-    <div class="itemmenu">aaa</div>
+    <div class="itemmenu">Season</div>
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar2">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
-    </ul>
+    <?php include ('menu/season/season.php');?>
   </div>  
+  
+  <!-- studio films -->
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar3">
     <div class="iconitemmenu">&#10017 </div>
-    <div class="itemmenu">aaa</div>
+    <div class="itemmenu">Studio</div>
   </button>
+  
+  
   <div class="collapse navbar-collapse" id="collapsibleNavbar3">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>    
-    </ul>
+   <?php include('menu/studio/studio.php'); ?>
   </div>  
+  
+   <!-- type films -->
+  <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar4">
+    <div class="iconitemmenu">&#10017 </div>
+    <div class="itemmenu">type</div>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar4">
+   <?php include('menu/type/type.php'); ?>
+  </div>
+  
+   <!-- type films -->
+  <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar5">
+    <div class="iconitemmenu">&#10017 </div>
+    <div class="itemmenu">singer</div>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar5">
+   <?php include('menu/singer/singer.php'); ?>
+  </div>
+  
+  
+   <!-- login account user -->
    <div class="logi">
    	<div class="btnlogin">
     	 login
