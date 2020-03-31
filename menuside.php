@@ -44,7 +44,10 @@ body {
   text-align:center;
   color:white;
 }
-
+#mySidenav{
+  overflow-y: hidden;
+  overflow-x: hidden;
+	}
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -70,6 +73,19 @@ body {
     </div>
   </div>  
   
+  
+   <!-- type films -->
+  <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar4">
+    <div class="iconitemmenu">&#10017 </div>
+    <div class="itemmenu">type</div>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar4">
+   <?php include('menu/type/type.php'); ?>
+  </div>
+  
+  
+  
   <!-- season films -->
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar2">
   	<div class="iconitemmenu">&#10017 </div>
@@ -84,21 +100,11 @@ body {
     <div class="iconitemmenu">&#10017 </div>
     <div class="itemmenu">Studio</div>
   </button>
-  
-  
+ 
   <div class="collapse navbar-collapse" id="collapsibleNavbar3">
    <?php include('menu/studio/studio.php'); ?>
   </div>  
   
-   <!-- type films -->
-  <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar4">
-    <div class="iconitemmenu">&#10017 </div>
-    <div class="itemmenu">type</div>
-  </button>
-  
-  <div class="collapse navbar-collapse" id="collapsibleNavbar4">
-   <?php include('menu/type/type.php'); ?>
-  </div>
   
    <!-- type films -->
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar5">
@@ -109,6 +115,8 @@ body {
   <div class="collapse navbar-collapse" id="collapsibleNavbar5">
    <?php include('menu/singer/singer.php'); ?>
   </div>
+  
+  
   
   
    <!-- login account user -->
