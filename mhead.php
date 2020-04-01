@@ -1,5 +1,7 @@
 
 
+
+
 <div class="menu1" >
     <div class="menutop">
         <div class="iconw">
@@ -21,9 +23,18 @@
               <button class="butsearch" type="submit">
               	SEARCH
               </button>
-              <input class="inputsearch" type="text" placeholder="INSERT YOUR FILM's NAME..." name="search">
+              <input id="basics" class="inputsearch" type="text" placeholder="INSERT YOUR FILM's NAME..." name="search"/>
             </form>
         
     </div>
 </div>
 
+<script>
+var options = {
+	url: "mau.js"
+};
+
+$("#basics").easyAutocomplete(options);
+document.getElementsByClassName("easy-autocomplete")[0].setAttribute("id", "easyAutocomplete"); 
+document.getElementById("easyAutocomplete").style.width="90%";
+</script>

@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 .infodetail b {
 	color:#b5e7ff;
 	font-size:20px;
@@ -464,8 +465,15 @@ z-index: -9;
 	border-style:solid;
 	border-color:black;
 	}
-.inputsearch{
+#easyAutocomplete{
+	z-index:1;
+	position:relative;
+	float:left;
 	width:90%;
+	color:white;
+	}
+.inputsearch{
+	width:100%;
 	height:30px;
 	float:left;
 	position:relative;
