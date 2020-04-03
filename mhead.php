@@ -17,10 +17,10 @@
         </div>
     </div>
     <div class="menubot">
-    	
-        	<form class="formsearch" action="/action_page.php">
+    		<iframe name="notrelo" style="display:none"></iframe>
+        	<form class="formsearch" action="/action_page.php" method="post" target="notrelo">
               
-              <button class="butsearch" type="submit">
+              <button class="butsearch" type="submit" onClick="checkin()">
               	SEARCH
               </button>
               <input id="basics" class="inputsearch" type="text" placeholder="INSERT YOUR FILM's NAME..." name="search"/>
@@ -30,6 +30,11 @@
 </div>
 
 <script>
+function checkin(){
+	
+	var ch = document.getElementById('basics').value;
+	if(ch==0){alert("Fill some film's name, please !!!")}
+}
 var options = {
 	url: "mau.js",
 
