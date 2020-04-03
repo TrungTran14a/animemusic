@@ -7,8 +7,9 @@
 	}
 .amthanh{
 	width:100%;
-	background-color: #212529;
-	height: 30px;
+	background-color: #3dbaf7;
+	height: 40px;
+	border-radius:50px;
 	}
 #a{
 width: 100%;
@@ -516,6 +517,7 @@ z-index: -9;
 	background-color: #373737;
 	border-left: 1px #718674 solid;
 	border-right: 1px #718674 solid;
+	z-index: 2;
 	}
 .menutop{
 	width:100%;
@@ -593,6 +595,7 @@ body{
 		border: 1px #fff  solid;
 		border-radius:90%;
 		}
+	
 
 }
 @media screen and ( max-width: 10000px ) {
@@ -631,7 +634,10 @@ body{
 .mslider{height:200px; background-color:}
 }
 @media screen and ( min-width: 992px ) {
-	
+	.butsearch:hover{
+	background: #BACECF;
+	color: #071B49;
+}
 #fmsli{
 	  height:350px;
 	  }
@@ -641,6 +647,10 @@ body{
 .mslider{height:350px; background-color:}
 }
 @media screen and ( min-width: 10000px ) {
+	.butsearch:hover{
+	background: #62f7f7;
+	color: #071B49;
+}
 #fmsli{
 	  height:400px;
 	  }

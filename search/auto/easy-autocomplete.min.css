@@ -352,7 +352,8 @@
 	padding-bottom: 0;
 	padding-left: 0;
 	position: relative;
-	top: -1px
+	top: -1px;
+	
 }
 
 .easy-autocomplete-container ul li,

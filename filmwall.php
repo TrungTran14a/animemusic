@@ -9,9 +9,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="./css/hover/css/hover.css"  media="all">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="search/auto/easy-autocomplete.min.css">
+	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="search/auto/jquery.easy-autocomplete.min.js"></script>
+  <script src="code.jquery.com/jquery-1.11.2.min.js"></script>
+	
 <title>ANIME NAME</title>
 </head>
 
@@ -20,8 +25,10 @@
 <div id="size" class="container">
 	<?php include('mhead.php'); ?>
     <?php include('contentfw.php'); ?>
+    
 </div>
 	<?php include('mend.php') ?>
+	<div id='a'></div>
 
 </body>
 </html>
