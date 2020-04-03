@@ -31,7 +31,46 @@
 
 <script>
 var options = {
-	url: "mau.js"
+	url: "mau.js",
+
+
+	list: {
+		maxNumberOfElements:5,
+		match: {
+			enabled: true
+		},
+		sort: {
+			enabled: true
+		},
+		showAnimation: {
+			type: "slide", //normal|slide|fade
+			time: 400,
+			callback: function() {}
+		},
+
+		hideAnimation: {
+			type: "slide", //normal|slide|fade
+			time: 400,
+			callback: function() {}
+		}
+	},
+	
+	getValue: function(element) {
+		return element.name;
+	},
+
+	highlightPhrase: true,
+	
+	template: {
+		type: "links",
+		
+		
+		fields: {
+			iconSrc: "icon",
+			link: "website-link"
+		}
+	},
+	
 };
 
 $("#basics").easyAutocomplete(options);
