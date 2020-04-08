@@ -31,6 +31,6 @@ body{
 
 		<?php include ('contain.php');?>
         <div id='a'></div>
-</div>
+
 </body>
 </html>

@@ -71,7 +71,11 @@ function ch1(){
 function ch2(){
 	document.getElementById("info1").style.display ="none";
 	document.getElementById("wp2").style.display ="block";
+	
 	}
+function ch3(){
+	alert("This funciton will be completed soon !!! ^.^ ");
+}
 </script>
 
 
@@ -82,16 +86,16 @@ function ch2(){
             <div class="ava" >
             	<?php include('movewall.php')?>
             </div>
-            <div id="btnxem" class="hvr-bounce-to-right col-sm-3" onClick="ch1()">
+            <div id="btnxem" class="hvr-bounce-to-right col-sm-6 col-lg-3" onClick="ch1()">
             	info
             </div>
-            <div id="btnsong" class="hvr-bounce-to-right col-sm-3" onClick="ch2()">
+            <div id="btnsong" class="hvr-bounce-to-right col-sm-6 col-lg-3" onClick="ch2()">
             	song
             </div>
-            <div id="btnwallpaper" class="hvr-bounce-to-right col-sm-3" >
+            <div id="btnwallpaper" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
             	wallpaper
             </div>
-            <div id="btnxem" class="hvr-bounce-to-right col-sm-3">
+            <div id="btnxem" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
             	watch
             </div>
            

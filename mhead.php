@@ -18,18 +18,23 @@
     </div>
     <div class="menubot">
     		<iframe name="notrelo" style="display:none"></iframe>
-        	<form class="formsearch" action="/action_page.php" method="post" target="notrelo">
-              
-              <button class="butsearch" type="submit" onClick="checkin()">
+        	
+              <form id="se" class="formsearch" method="post" onsubmit="tim()">
+              <button id="btse" class="butsearch"  type="submit">
               	SEARCH
-              </button>
+				</button>
               <input id="basics" class="inputsearch" type="text" placeholder="INSERT YOUR FILM's NAME..." name="search"/>
+				
             </form>
         
     </div>
 </div>
 
 <script>
+function tim(){
+	var se = document.getElementById('basics').value;
+	document.getElementById('se').action='search.php?search='+se;
+}
 function checkin(){
 	
 	var ch = document.getElementById('basics').value;
