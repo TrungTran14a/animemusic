@@ -15,52 +15,53 @@
                                 
                                 <ul id="iffilm"  class="col-sm-12 infodetail" type="none">
                                 	<li>
-                                     <span> <b>Name English:</b> <?php echo $d['Namee']; ?></span>
+                                     <span> <p1>Name English:</p1> <p2><?php echo $d['Namee']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Name Japanese:</b> <?php echo $d['Namej']; ?></span>
+                                     <span> <p1>Name Japanese:</p1> <p2><?php echo $d['Namej']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Name Romanji:</b> <?php echo $d['Namer']; ?></span>
+                                     <span> <p1>Name Romanji:</p1> <p2><?php echo $d['Namer']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Episodes:</b> <?php echo $d['Eps']; ?></span>
+                                     <span> <p1>Episodes:</p1> <p2><?php echo $d['Eps']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Duration:</b><?php echo $d['LongF']; ?></span>
+                                     <span> <p1>Duration:</p1><p2><?php echo $d['LongF']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Aired:</b> <?php echo $d['AirF']; ?></span>
+                                     <span> <p1>Aired:</p1> <p2><?php echo $d['AirF']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Views:</b> <?php echo $d['ViewF']; ?></span>
+                                     <span> <p1>Views:</p1> <p2><?php echo $d['ViewF']; ?></p2></span>
                                     </li>
                                      <li>
-                                     <span> <b>Status:</b> <?php echo $d['NStt']; ?></span>
+                                     <span> <p1>Status:</p1> <p2><?php echo $d['NStt']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Type:</b> <?php echo $d['NType']; ?></span>
+                                     <span> <p1>Type:</p1> <p2><?php echo $d['NType']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Season:</b> <?php echo $d['NSea']; ?></span>
+                                     <span> <p1>Season:</p1> <p2><?php echo $d['NSea']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Studio:</b> <?php echo $d['NameStu']; ?></span>
+                                     <span> <p1>Studio:</p1> <p2><?php echo $d['NameStu']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <b>Rating:</b> <?php echo $d['Nra']; ?></span>
+                                     <span> <p1>Rating:</p1> <p2><?php echo $d['Nra']; ?></p2></span>
                                     </li>
                                      
                                      <li>
-                                     <span> <b>Genres:</b>  
+                                     <span> <p1>Genres:</p1>  
 													 <?php $f=$_GET["o"];
                                                         $sq="select * from film,genres 
                                                         where Idf = $f and film.IdF = genres.IdFuck";
                                                         $kql=mysqli_query($conn,$sq);
                                                         while($dd = mysqli_fetch_assoc($kql))
-                                                        {  echo $dd['NGen'].'.'?>
+                                                        {  ?><p2> <?php echo $dd['NGen'].'.'?></p2>
                                      </span>     <?php } ?>
                                     </li>
                                 </ul>
+							<button class="dload" onclick="repo()">report</button>
                         </div>
            <?php } ?>

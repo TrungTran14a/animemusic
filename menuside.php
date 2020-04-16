@@ -128,6 +128,12 @@ body {
     	 register
     </div>
    </div>
+	 <!-- custom them -->
+	<div class="logi">
+   		<div class="ctheme" onClick="ctheme()">
+    	 change theme
+		</div>
+   </div>
    
 </div>
 

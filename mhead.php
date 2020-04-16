@@ -19,9 +19,9 @@
     <div class="menubot">
     		<iframe name="notrelo" style="display:none"></iframe>
         	
-              <form id="se" class="formsearch" method="post" onsubmit="tim()">
-              <button id="btse" class="butsearch"  type="submit">
-              	SEARCH
+              <form id="se" class="formsearch" method="get" action="search.php">
+              <button id="btse" class="butsearch"  type="submit" onClick="checkin()">
+              	search
 				</button>
               <input id="basics" class="inputsearch" type="text" placeholder="INSERT YOUR FILM's NAME..." name="search"/>
 				

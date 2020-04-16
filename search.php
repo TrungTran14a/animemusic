@@ -27,39 +27,15 @@ body{
 </head>
 
 <body>
+	<div id="size" class="container" >
+    	
+        <?php include ('mhead.php');?>
+        <?php include ('mbody2.php');?>
+       
+    
 
-
-	 <?php  include("ketnoibh.php");
-			    	
-					$f=$_GET["search"];
-					$s="select * from film where Namee Like('%$f%') ";
-					$kq=mysqli_query($conn,$s);
-					while($d = mysqli_fetch_assoc($kq))
-					{
-						?>
-                        <div class="totalinfo row ">
-                            <div id="tagfilm" class="col-sm-12"><i id="icontag" class="material-icons" >star_border</i>&nbsp info &nbsp <i id="icontag" class="material-icons" >star_border</i></div> 
-                            
-                                
-                                <ul id="iffilm"  class="col-sm-12 infodetail" type="none">
-                                	<li>
-                                     <span> <b>Name English:</b> <?php echo $d['Namee']; ?></span>
-                                    </li>
-                                    <li>
-                                     <span> <b>Name Japanese:</b> <?php echo $d['Namej']; ?></span>
-                                    </li>
-                                    <li>
-                                     <span> <b>Name Romanji:</b> <?php echo $d['Namer']; ?></span>
-                                    </li>
-                                    <li>
-                                     <span> <b>Episodes:</b> <?php echo $d['Eps']; ?></span>
-                                    </li>
-                                    
-                                   
-                                </ul>
-                        </div>
-           <?php } ?>
-	
+	</div>
+     <?php include ('mend.php');?>
 	<div id='a'></div>
 
 </body>

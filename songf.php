@@ -14,12 +14,13 @@
                         <p></p>
                         <span> <b>Singer:</b> <?php echo $d['NameSin'];?></span>
                         <p></p>
-                         <audio id="amthanh" class="amthanh" controls loop >
+                         <audio id="amthanh" class="amthanh" controls volume="0.1" loop  >
                           <source src="<?php echo "music/".$d['LinkS']?>" type="audio/ogg">
                           <source src="<?php echo "music/".$d['LinkS']?>" type="audio/mpeg">
                         		Your browser does not support the audio element.
                         </audio> 
-						<button class="dload" onclick="myFunction()">download</button>
+						<button title="Download this song" class="dload" onclick="myFunction()"><i class="material-icons" style="font-size:14px">get_app</i>download</button>
+						<button title="Report this song" class="dload" onclick="repo()"><i class="material-icons">error_outline</i>report</button>
                     </div>
                    
                     
@@ -28,6 +29,9 @@
 
                 <?php } ?>
 <script>
+function repo(){
+	alert("We're building this funciton !");
+}
 function myFunction() {
   var li = document.getElementsByTagName('source')[0].src;
  alert(li);

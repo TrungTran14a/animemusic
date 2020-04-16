@@ -1,20 +1,91 @@
 @charset "utf-8";
 /* CSS Document */
+
+.kqsearch p2{
+	color:#ff8b8b;
+	text-transform: uppercase;
+	}
+.kqsearch{
+	width:100%;
+	height: auto;
+	position: relative;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: white;
+	
+	border-left: 3px solid white;
+	background: #4d77a4;
+	margin: 0px 0px 20px 0px;
+}
+.ctheme:hover{
+	cursor: pointer;
+	background-color: #ff5563;
+	
+}
+.ctheme{
+	width:100%;
+	height: 50px;
+	background-color: #d04f59;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 50px;
+	color: white;
+	border: 1px solid white;
+}
+.notfound h , .notfound p {
+	width: auto;
+	height: auto;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #f75c71;
+	float: left;
+	position: relative;
+}
+.notfound h {
+	font-size: 30px;
+}
+.notfound p {
+	font-size: 25px;
+}
+.notfound{
+	width: 100%;
+	min-height: 300px;
+	background-image: url('../image/mbody/error/err.png');
+	background-repeat: no-repeat;
+	background-size: 600px 300px ;
+	background-color: white;
+	background-position: right;
+	padding: 80px 0px 0px 1%;
+	
+	
+}
+.dload i:hover{
+	color:red;
+} 
+.dload i {
+	font-size: 20px;
+
+float: left;
+
+line-height: 15px;
+}
 .dload:hover{
 	background: #4FC2DF;
 	color: white;
 }
 .dload{
-	width: 12%;
+	width: 120px;
     height: 30px;
-    font-size: 14px;
+    font-size: 12px;
     text-transform: uppercase;
     color: #f9f9f9;
     background: #364f5b;
-    font-weight: bold;
     float: left;
     position: relative;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 10px 10px 0px;
     border-radius: 20px;
     border: none;
 }
@@ -31,19 +102,28 @@
 #a{
 width: 100%;
 height: 100%;
-background-image: url('../image/mbody/bac.jpg');
+background-image: none;
 position: fixed;
 background-size: cover;
 z-index: -9;
-	}
-#iffilm li b{
-	color:#66ceb1;
+background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
+}
+#iffilm li p1{
+	color:white;
 	font-size:20px;
 	margin:0px 20px 0px 0px;
+	font-weight: 600;
+	}
+#iffilm li p2{
+	color:#060d80;
+	font-size:15px;
+	margin:0px 0px 0px 0px;
 	}
 #iffilm li {
 	margin:20px 0px 0px 0px;
-	font-size:15px;
+	
+	border-left: 3px solid white;
+	padding-left: 1%;
 	}
 #iffilm{
 	width:100%;
@@ -95,20 +175,23 @@ z-index: -9;
 	min-height:1000px;
 	
 	}
-.ava, #btnsong, #btnwallpaper, #btnxem{
+.ava, #btnsong, #btnwallpaper, #btnxem, #btnvi{
 	border-left: 1px white solid;
 	border-right: 1px white solid;
 	}
+#btnvi{
+	background-color:#2c6ba0;
+}
 #btnsong{
-	background-color:#258f79;
-	}
-#btnwallpaper{
 	background-color:#2c6ba0;
 	}
-#btnxem{
-	background-color:#d9425d;
+#btnwallpaper{
+	background-color:#258f79;
 	}
-#btnsong, #btnwallpaper, #btnxem{
+#btnxem{
+	background-color:#258f79;
+	}
+#btnsong, #btnwallpaper, #btnxem, #btnvi{
 	width:100%;
 	height:50px;
 	position:relative;
@@ -291,23 +374,56 @@ z-index: -9;
 	height:auto;
 	background-color:white;
 	}
+.infsli b{
+	text-transform: uppercase;
+	color: #0be8ff;
+	border-left: 2px solid white;
+	padding-left: 10px;
+}
+.infsli li{
+	list-style-type: none;
+	overflow-wrap: anywhere;
+	margin: 1% 5% 1% 5%;
+	
+	font-size: 14px;
+}
+.infsli{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	float: left;
+	background: black;
+	opacity: 0.6;
+	
+	
+}
+.infosli{
+	width:200px;
+	height:100%;
+	position:relative;
+	color:white;
+	z-index:22;
+	border-radius:10px;
+	
+}
 .btnwatch:hover{
-	background-color:red;
+	background-color:#fb5555;
+	cursor: pointer;
+	transition: 0.3s;
 	}
 .btnwatch{
-	width:auto;
+	width:100%;
 	height:auto;
 	position:absolute;
 	color:white;
-	z-index:22;
-	margin:13% 0% 50px 0px;
-	font-size:20px;
-	text-align:center;
-	background-color:black;
-	opacity:0.5;
-	color:white;
-	border-radius:10px;
-	border:white 1px solid
+	float: left;
+	bottom: 0;
+	text-align: center;
+	text-transform: uppercase;
+	background: #469bbd;
+	line-height: 30px;
+	font-weight: bold;
+	
 	}
 .backsli{
 	width:50%;
@@ -333,10 +449,21 @@ z-index: -9;
 	
 	
 	}
+#mnext:hover{
+	background-color:black;
+	opacity: 0.5;
+	
+}
+#mprev:hover{
+	background-color:black;
+	
+	opacity: 0.5;
+}
 #mnext, #mprev{
 	width: 5%;
 	opacity: 1;
-	background: black;	
+	z-index: 23;
+	transition: 0.3s;
 }
 #fmsli{
 	width:100%;
@@ -358,7 +485,7 @@ z-index: -9;
 	font-size:14px
 	}
 #tagfilm{
-	background:#2b2b2b;
+	background:#3b8b98;
 	color:white;
 	font-size:15px;
 	font-weight:bold;
@@ -405,7 +532,7 @@ z-index: -9;
 	color:#89fff8;
 	}
 #allf{
-	background-color:;
+	min-height: 300px;
 	}
 .namefilm{
 	width:100%;
@@ -423,7 +550,7 @@ z-index: -9;
 	}
 .facefilm{
 	width:auto;
-	height:85%;
+	height:87%;
 	position:relative;
 	background-position:center center;
 	z-index:1
@@ -471,13 +598,13 @@ z-index: -9;
 	height:30px;
 	float:left;
 	position:relative;
-	
+	text-transform: uppercase;
 	background-color:#2c2c2c;
-	
+	transition: 0.3s;
 	background-repeat:no-repeat;
 	background-size:contain;
 	color:white;
-	font-weight:900;
+	font-weight:600;
 	font-size:14px;
 	border:1px;
 	border-style:solid;
@@ -513,7 +640,7 @@ z-index: -9;
 	}
 
 .searchnox{
-	width::100%;
+	width:100%;
 	height:auto;
 	position:relative;
 	float:left;
@@ -541,7 +668,7 @@ z-index: -9;
 	height:60px;
 	position:relative;
 	float:left;
-	background-color:#373737;
+	background-color:#296e79;
 	z-index:5
 	}
 .iconw{

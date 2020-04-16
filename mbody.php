@@ -5,8 +5,10 @@
 
 		<div id="mbody" class="mbody" onClick="closeNav()">
         	<!-- khoang trong tren phan body -->
-        	<div class="ads1">
-            </div>
+				<!--
+					<div class="ads1">
+					</div>
+				-->
             <!-- slider -->
                 <div class="mslider">
                 	<?php include('slider.php') ?>
@@ -34,7 +36,7 @@
                             </div>
                             <div class="facefilm" style="background-image:url('<?php echo $row['NameP'];?>'); background-repeat:no-repeat; background-size:cover"></div>
                             <div class="namefilm" >
-                                <div class="contnamefilm">
+                                <div class="contnamefilm" title="<?php echo $row["Namer"];?>">
                                     <?php echo $row["Namer"];?>
                                 </div>
                             </div>
@@ -46,6 +48,26 @@
                 <!-- hot film -->
                 <div class="row">
                     <div id="tagfilm" class="col-sm-12"><i id="icontag" class="material-icons" >star_border</i>&nbsp HOT FILM&nbsp <i id="icontag" class="material-icons" >star_border</i></div>     
+                </div>
+            	<div  id="allf" class="row justify-content-around ">
+                	<div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
+                    	<a href="#" class="linkfilm">
+                            <div class="showep">
+                                <span>05/12</span>
+                            </div>
+                            <div class="facefilm" style="background-image:url('./image/mbody/small.jpg'); background-repeat:no-repeat; background-size:cover"></div>
+                            <div class="namefilm" >
+                                <div class="contnamefilm">
+                                    Uchiage hanabi, shita kara miru ka, yoko kara miru ka.aaaaaaaaaaa
+                                </div>
+                            </div>
+                        </a>
+                    </div>       
+                </div>
+				
+				<!-- top film -->
+				<div class="row">
+                    <div id="tagfilm" class="col-sm-12"><i id="icontag" class="material-icons" >star_border</i>&nbsp TOP FILM&nbsp <i id="icontag" class="material-icons" >star_border</i></div>     
                 </div>
             	<div  id="allf" class="row justify-content-around ">
                 	<div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">

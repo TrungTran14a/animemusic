@@ -95,7 +95,7 @@ function ch3(){
             <div id="btnwallpaper" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
             	wallpaper
             </div>
-            <div id="btnxem" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
+            <div id="btnvi" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
             	watch
             </div>
            
