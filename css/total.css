@@ -70,7 +70,7 @@
 
 float: left;
 
-line-height: 15px;
+line-height: 18px;
 }
 .dload:hover{
 	background: #4FC2DF;
@@ -770,12 +770,12 @@ body{
 @media screen and ( min-width: 768px ) {
 	
 #fmsli{
-	  height:200px;
+	  height:300px;
 	  }
 #allfmsli{
-	  height:200px;
+	  height:300px;
 	  }
-.mslider{height:200px; background-color:}
+.mslider{height:300px;}
 }
 @media screen and ( min-width: 992px ) {
 	.butsearch:hover{
