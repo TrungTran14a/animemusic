@@ -87,15 +87,19 @@ function ch3(){
             	<?php include('movewall.php')?>
             </div>
             <div id="btnxem" class="hvr-bounce-to-right col-sm-6 col-lg-3" onClick="ch1()">
+				<i class="material-icons">info_outline</i>
             	info
             </div>
             <div id="btnsong" class="hvr-bounce-to-right col-sm-6 col-lg-3" onClick="ch2()">
+				<i class="material-icons">library_music</i>
             	song
             </div>
             <div id="btnwallpaper" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
+				<i class="material-icons">filter</i>
             	wallpaper
             </div>
             <div id="btnvi" class="hvr-bounce-to-right col-sm-6 col-lg-3" onclick="ch3()">
+				<i class="material-icons">video_library</i>
             	watch
             </div>
            

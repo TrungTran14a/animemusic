@@ -188,6 +188,10 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 #btnwallpaper{
 	background-color:#258f79;
 	}
+.hvr-bounce-to-right i{
+	line-height: 50px;
+	float: left
+}
 #btnxem{
 	background-color:#258f79;
 	}
@@ -207,12 +211,19 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	overflow:hidden;
 	white-space:nowrap;
 	text-overflow: ellipsis;
-	
+	 -webkit-animation: glow 0.1s ease-in-out infinite alternate;
+  -moz-animation: glow 0.1s ease-in-out infinite alternate;
+  animation: glow 0.1s ease-in-out infinite alternate;
 	 
 	}
-#btnsong, #btnwallpaper, #btnxem:hover{
+.hvr-bounce-to-right:hover{
 	cursor:pointer;
+	text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #e60073, 0 0 4px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	 -webkit-animation: glow 0.1s ease-in-out infinite alternate;
+  -moz-animation: glow 0.1s ease-in-out infinite alternate;
+  animation: glow 0.1s ease-in-out infinite alternate;
 	}
+
 .mwleft{
 	width:100%;
 	height:auto;
