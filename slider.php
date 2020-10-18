@@ -28,9 +28,13 @@
 												<li><b>episodes:</b> <?php echo $d['Eps']?></li>
 
 										</div>
+										<a  class="btwdetails"  href="filmwall.php?o=<?php echo $d["IdF"];?>" >
 										<div class="btnwatch" onClick="dem()">
-											<p1>details</p1>
+											<i class="material-icons">playlist_play</i>
+											
+											details
 										</div>
+											<a>
 									</div>
 								</div>
 				 

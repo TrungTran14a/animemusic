@@ -109,13 +109,13 @@ z-index: -9;
 background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 }
 #iffilm li p1{
-	color:white;
+	color:#b3ffc6;
 	font-size:20px;
 	margin:0px 20px 0px 0px;
 	font-weight: 600;
 	}
 #iffilm li p2{
-	color:#060d80;
+	color:#fff;
 	font-size:15px;
 	margin:0px 0px 0px 0px;
 	}
@@ -189,7 +189,7 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	background-color:#258f79;
 	}
 .hvr-bounce-to-right i{
-	line-height: 50px;
+	line-height: 40px;
 	float: left
 }
 #btnxem{
@@ -197,12 +197,12 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	}
 #btnsong, #btnwallpaper, #btnxem, #btnvi{
 	width:100%;
-	height:50px;
+	height:40px;
 	position:relative;
 	float:left;
 	text-align:center;
-	line-height:50px;
-	font-size:20px;
+	line-height:40px;
+	font-size:16px;
 	text-transform:uppercase;
 	color:white;
 	border: 1px white solid;
@@ -417,8 +417,21 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	border-radius:10px;
 	
 }
+.btwdetails{
+	text-decoration: none;
+	color: white;
+}
+.btwdetails:hover{
+	text-decoration: none;
+	color: white;
+}
+.btnwatch i {
+	line-height:30px;
+	float: right;
+	font-size: 30px;
+}
 .btnwatch:hover{
-	background-color:#fb5555;
+	background-color:#cc6c6c;
 	cursor: pointer;
 	transition: 0.3s;
 	}
@@ -426,7 +439,7 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	width:100%;
 	height:auto;
 	position:absolute;
-	color:white;
+	
 	float: left;
 	bottom: 0;
 	text-align: center;
@@ -479,9 +492,9 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 #fmsli{
 	width:100%;
 	position:relative;
-	background-repeat:no-repeat; 
-	background-size:cover;
-	background-position-y:top
+	background-repeat:repeat-x; 
+	background-size:contain;
+	
 	
 	}
 .mslider{

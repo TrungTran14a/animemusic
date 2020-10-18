@@ -7,7 +7,7 @@
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 0px;
@@ -15,26 +15,34 @@
   overflow-y:hidden
 }
 
-.flside a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
 
 .flside a:hover {
   color: #f1f1f1;
 }
 
-.flside .closebtn {
-  position: absolute;
+.flside {
+  position: relative;
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-left: 50px;
+ 
 }
+.closebtn{
+		width:100px;
+		height:50px;
+		font-size:50px;
+		text-align:center;
+		color:#30D5F7;
+		float:left;
+		position:relative;
+		padding:0px;
+		left:0;
+		margin:0;
+		line-height:50px;
+		transition: 0.3s;
+	text-decoration: none;
+	background-color: #3f5c75;
+	}
 
 #mainflside {
   transition: margin-left .5s;
@@ -103,9 +111,7 @@ function ch3(){
             	watch
             </div>
            
-            <a href="javascript:void(0)" 
-  class="closebtn" onclick="closefl()" style="width:100%;height:50px;font-size:50px;text-align:center;color:white;float:left;position:relative;padding:0px;left:0;margin:0;line-height:50px">&times;
-            </a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closefl()" title="Close This Menu">&times;</a>
             </div>
                 
            
