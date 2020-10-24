@@ -65,7 +65,7 @@ body {
     <div class="itemmenu"> Genres</div>
     
   </button>
-  
+   
   <!-- genres films -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar1">
     <div class="allitemin">

@@ -116,7 +116,7 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	}
 #iffilm li p2{
 	color:#fff;
-	font-size:15px;
+	font-size:21px;
 	margin:0px 0px 0px 0px;
 	}
 #iffilm li {
@@ -279,7 +279,6 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	width: 70px;
 	height: 40px;
 	color: black;
-	
 	position: relative;
 	float: left;
 	margin: 2% 0px 2% 2%;
@@ -292,8 +291,16 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	overflow:hidden;	
 	font-weight:bold;
 	box-shadow: 3px 1px 7px -5px rgb(7, 2, 74);
-
 	}
+.itemdetailmore{
+	white-space: nowrap;
+	text-transform: uppercase;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow:hidden;	
+	font-weight:bold;
+	font-size: 11px;
+}
 .navbar-toggler{
 	width:100%;
 	}

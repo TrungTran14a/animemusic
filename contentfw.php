@@ -87,7 +87,7 @@ function ch3(){
 </script>
 
 
-<div class="mbody">
+<div class="mbody" onClick="closeNav()">
 	<div  id="mbdy" class="mwleft" >
         <div id="myflside" class="flside">       
         	

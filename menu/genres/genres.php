@@ -7,7 +7,8 @@
 			while($d = mysqli_fetch_assoc($kq))
 			{ ?>
             	<div class="itemdetail">
-                	<?php echo $d['NGen']?>
+
+					<?php $maphim = $d['IdGen']; include("linkgen.php"); ?>
                 </div>
                 
 		<?php } ?>

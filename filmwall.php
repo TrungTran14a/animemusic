@@ -22,13 +22,13 @@
 
 <body>
 
-<div id="size" class="container">
+<div id="size" class="container" >
 	<?php include('mhead.php'); ?>
     <?php include('contentfw.php'); ?>
     
 </div>
 	<?php include('mend.php') ?>
-	<div id='a'></div>
+	<div id='a' ></div>
 
 </body>
 </html>
