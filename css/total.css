@@ -269,14 +269,9 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	padding:15px 0px 15px 0px ;
 	
 	}
-.itemdetail:hover{
-	background-color:#199981;
-	color:white;
-	cursor:pointer;
-	
-	}
+
 .itemdetail{
-	width: 70px;
+	width: 75px;
 	height: 40px;
 	color: black;
 	position: relative;
@@ -292,15 +287,24 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	font-weight:bold;
 	box-shadow: 3px 1px 7px -5px rgb(7, 2, 74);
 	}
-.itemdetailmore{
+.itemdetail:hover{
+	background-color:#5bdbcf;#5bdbcf#199981
+	color:white;
+	cursor:pointer;
+	
+	}
+#itemdetailmore{
 	white-space: nowrap;
 	text-transform: uppercase;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 	overflow:hidden;	
 	font-weight:bold;
-	font-size: 11px;
+	font-size: 13px;
+	display: block;
 }
+#itemdetailmore:hover{color: white}
+
 .navbar-toggler{
 	width:100%;
 	}

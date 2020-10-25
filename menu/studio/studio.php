@@ -25,7 +25,7 @@ text-transform: uppercase;
 			while($d = mysqli_fetch_assoc($kq))
 			{ ?>
             	<li class="nav-item">
-        			<a id="seasonitem"class="nav-link" href="#"><?php echo $d['NameStu'];?></a>
+        			<a id="seasonitem"class="nav-link" href="filmwall.php?studio=<?php echo $d['IdStu']?>"><?php echo $d['NameStu'];?></a>
       			</li>
                 
 		<?php } ?>

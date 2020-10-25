@@ -23,16 +23,9 @@ body {
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+ 
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav .closebtn {
