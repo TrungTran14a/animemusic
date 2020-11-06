@@ -58,7 +58,7 @@
                                                         where Idf = $f and film.IdF = genres.IdFuck";
                                                         $kql=mysqli_query($conn,$sq);
                                                         while($dd = mysqli_fetch_assoc($kql))
-                                                        {  ?><p2> <?php echo $dd['NGen'].'.'?></p2>
+                                                        {  ?><p2> <?php echo $dd['NGen'].'-'?></p2>
                                      </span>     <?php } ?>
                                     </li>
                                 </ul>

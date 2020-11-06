@@ -113,6 +113,7 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	font-size:20px;
 	margin:0px 20px 0px 0px;
 	font-weight: 600;
+	text-shadow: 1px 1px 1px #2a2539;
 	}
 #iffilm li p2{
 	color:#fff;
@@ -124,12 +125,17 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 	
 	border-left: 3px solid white;
 	padding-left: 1%;
+
 	}
 #iffilm{
 	width:100%;
 	height:auto;
-	
+	text-shadow: 1px 1px 1px #2a2539;
 	}
+#iffilm span{
+	text-shadow: 1px 1px 1px #2a2539;
+	
+}
 #wp2{
 	display:none
 	}
@@ -503,8 +509,8 @@ background: linear-gradient(to bottom, #33ccff 11%, #ffccff 80%);
 #fmsli{
 	width:100%;
 	position:relative;
-	background-repeat:repeat-x; 
-	background-size:contain;
+	background-repeat:no-repeat; 
+	background-size:cover;
 	
 	
 	}
