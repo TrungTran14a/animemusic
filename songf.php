@@ -14,7 +14,7 @@
                         <p></p>
                         <span> <b>Singer:</b> <?php echo $d['NameSin'];?></span>
                         <p></p>
-                         <audio id="amthanh" class="amthanh" controls volume="0.1" loop  >
+                         <audio id="amthanh" class="amthanh" controls volume="0.1" loop  > 
                           <source src="<?php echo "music/".$d['LinkS']?>" type="audio/ogg">
                           <source src="<?php echo "music/".$d['LinkS']?>" type="audio/mpeg">
                         		Your browser does not support the audio element.

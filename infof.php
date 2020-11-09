@@ -53,12 +53,12 @@
                                      
                                      <li>
                                      <span> <p1>Genres:</p1>  
-													 <?php $f=$_GET["o"];
-                                                        $sq="select * from film,genres 
-                                                        where Idf = $f and film.IdF = genres.IdFuck";
+													 <?php $ff=$_GET["o"];
+                                                        $sq="select * from film,dschool,genres
+                                                        where film.Idf = $ff and dschool.IdF = film.IdF and dschool.IdGen = genres.IdGen";
                                                         $kql=mysqli_query($conn,$sq);
                                                         while($dd = mysqli_fetch_assoc($kql))
-                                                        {  ?><p2> <?php echo $dd['NGen'].'-'?></p2>
+                                                        {  ?><p2> <?php echo $dd['NGen'].'; '?></p2>
                                      </span>     <?php } ?>
                                     </li>
                                 </ul>

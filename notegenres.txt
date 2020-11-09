@@ -1,0 +1,2 @@
+Phim sẽ dc phân loại trong bảng dschool
+tương ứng mỗi phim sẽ có mỗi Id loại tương ứng
