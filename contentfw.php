@@ -110,13 +110,14 @@ function ch3(){
 				<i class="material-icons">video_library</i>
             	watch
             </div>
-           
+            
             <a href="javascript:void(0)" class="closebtn" onclick="closefl()" title="Close This Menu">&times;</a>
             </div>
                 
            
  		
     </div>
+      <div>FILM NAME HERE </div>
         <div class="mwright">
         	<span id="openfl" style="" onclick="openfl()">&#9776; more</span>
             <div id="info1">
