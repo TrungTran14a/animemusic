@@ -1,6 +1,15 @@
 @charset "utf-8";
 /* CSS Document */
-
+.namectr{
+	width: 100%;
+	height: auto;
+	position: static;
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-weight: unset;
+	text-shadow: 1px 1px 1px #2a2539;
+}
 .kqsearch p2{
 	color:#ff8b8b;
 	text-transform: uppercase;

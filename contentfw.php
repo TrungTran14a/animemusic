@@ -117,7 +117,7 @@ function ch3(){
            
  		
     </div>
-      <div>FILM NAME HERE </div>
+      <div id="nana" class="namectr">FILM NAME HERE </div>
         <div class="mwright">
         	<span id="openfl" style="" onclick="openfl()">&#9776; more</span>
             <div id="info1">
@@ -126,9 +126,11 @@ function ch3(){
             <div id="wp2">
             	<?php include('songf.php') ?>
             </div>
-        </div>
-        	
-        		
-            
-    
+        </div>   
 </div>
+<script type="text/javascript">
+  var na = document.getElementById("NE").innerText;
+  var ne = document.getElementById("NJ").innerText;
+  document.getElementById("nana").innerHTML = na +" - " +ne;
+
+</script>

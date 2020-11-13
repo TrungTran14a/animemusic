@@ -15,10 +15,10 @@
                                 
                                 <ul id="iffilm"  class="col-sm-12 infodetail" type="none">
                                 	<li>
-                                     <span> <p1>Name English:</p1> <p2><?php echo $d['Namee']; ?></p2></span>
+                                     <span> <p1>Name English:</p1> <p2 id="NE"><?php echo $d['Namee']; ?></p2></span>
                                     </li>
                                     <li>
-                                     <span> <p1>Name Japanese:</p1> <p2><?php echo $d['Namej']; ?></p2></span>
+                                     <span> <p1>Name Japanese:</p1> <p2 id="NJ"><?php echo $d['Namej']; ?></p2></span>
                                     </li>
                                     <li>
                                      <span> <p1>Name Romanji:</p1> <p2><?php echo $d['Namer']; ?></p2></span>
