@@ -55,7 +55,7 @@ body {
   <a id="btnmenuclose" href="javascript:void(0)" class="closebtn" onclick="closeNav()"> &#9776 MENU</a>
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar1">
     <div class="iconitemmenu">&#10017 </div>
-    <div class="itemmenu"> Genres</div>
+    <div  class="itemmenu"> Genres</div>
     
   </button>
    
@@ -65,7 +65,7 @@ body {
       <?php include('menu/genres/genres.php'); ?>
     </div>
   </div>  
-  
+
   
    <!-- type films -->
   <button id="btnitem" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar4">
@@ -137,6 +137,7 @@ function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
   document.getElementById("mbody").style.filter="blur(3px)";
   
+
 }
 
 function closeNav() {

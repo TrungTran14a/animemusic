@@ -131,6 +131,7 @@ function ch3(){
 <script type="text/javascript">
   var na = document.getElementById("NE").innerText;
   var ne = document.getElementById("NJ").innerText;
-  document.getElementById("nana").innerHTML = na +" - " +ne;
+  document.getElementById("nana").innerHTML = na +" - " +ne; //doan nay dung de cho hien thi name film trong database ra
+  var nane = na +" - " +ne;
 
 </script>

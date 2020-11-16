@@ -17,7 +17,7 @@
   <script src="search/auto/jquery.easy-autocomplete.min.js"></script>
   <script src="code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="fuck/theme.js"></script>
-<title>ANIME NAME</title>
+<title id="tittit">ANIME NAME</title>
 </head>
 
 <body>
@@ -29,6 +29,11 @@
 </div>
 	<?php include('mend.php') ?>
 	<div id='a' ></div>
+
+
+<script type="text/javascript">
+   document.getElementById("tittit").innerHTML = nane; //bien nane nam trong file contentfw
+</script>
 
 </body>
 </html>
