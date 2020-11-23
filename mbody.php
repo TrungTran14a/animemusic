@@ -34,7 +34,7 @@
                             <div class="showep">
                                 <span><?php echo $row["Eps"]; ?></span>
                             </div>
-                            <div class="facefilm" style="background-image:url('<?php echo $row['NameP'];?>'); background-repeat:no-repeat; background-size:cover"></div>
+                            <div id="avfilm" class="facefilm Newfilm" data-src="<?php echo $row["NameP"];?>" style=""></div>
                             <div class="namefilm" >
                                 <div class="contnamefilm" title="<?php echo $row["Namer"];?>">
                                     <?php echo $row["Namer"];?>
@@ -87,6 +87,28 @@
                 <?php include('sglink.php') ?>
             </div>
         </div>
-        
+
+
+
 </body>
+
+<!-- script nay dung de chay ava eerror thay the -->
+<script type="text/javascript">
+    var afilm = document.getElementsByClassName('Newfilm');
+    
+    for (var i = 0; i < afilm.length; i++) 
+    {
+        var t = afilm[i].getAttribute('data-src'); //luu thong tin trong tung cai data-src vao biet t de dung cho style
+        if(t == "" )
+            {afilm[i].setAttribute("style", "background-image:url('image/mbody/error/not.jpg'); background-repeat:no-repeat; background-size:cover");} // kiem tra neu gia tri cua data-src la rong thi se set style cho div bang hinh error
+        else{
+            afilm[i].setAttribute("style", "background-image:url('"+t+"'); background-repeat:no-repeat; background-size:cover"); // neu bien data-src co giá trị thì sẽ lấy giá trị này gắn vào style
+        }
+        
+    }
+
+
+
+</script>
+
 </html>
