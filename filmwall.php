@@ -23,8 +23,22 @@
 <body>
 
 <div id="size" class="container" >
-	<?php include('mhead.php'); ?>
-    <?php include('contentfw.php'); ?>
+	<?php
+        if(!isset($_GET['o']) or empty($_GET['o']))
+        {
+          include('mhead.php'); 
+          include('mbody2.php');
+        }
+        else
+        {
+          if(!empty($_GET['o']))
+            {
+              include('mhead.php'); 
+              include('contentfw.php');
+            }
+        }
+        //this function will check if there is a var for film or not. If yes, it's mean there is a var and search for the film with the ID film. If not, it will show the page not found and the rest of the body
+  ?>
     
 </div>
 	<?php include('mend.php') ?>
