@@ -6,10 +6,11 @@
 				{
 					$id = $q["IdGen"];
 					?>
-            <div class="itemdetailmore" onclick="location='filmwall.php?id=<?php echo $id?>'" > 
+            <div class="itemdetailmore" onclick="location='gend.php?id=<?php echo $id?>'" title="<?php echo $d['NGen']?>" > 
         	<?php
 					echo $q["NGen"];							
 				?>
             </div>
         <?php } ?>
 
+ 

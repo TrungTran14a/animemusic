@@ -15,7 +15,7 @@
                 </div>
             <!-- phan hien thi phim -->
             <div  class="container">
-            	
+            	 
             	<!-- de muc -->
                 <div class="row">
                     <div id="tagfilm" class="col-sm-12"><i id="icontag" class="material-icons" >star_border</i>&nbsp NEW FILM&nbsp <i id="icontag" class="material-icons" >star_border</i></div>     

@@ -8,10 +8,10 @@
 			{ ?>
             	<div class="itemdetail">
 
-					<!-- <?php $maphim = $d['IdGen']; include("linkgen.php"); ?> --> 
+					<?php $maphim = $d['IdGen']; include("linkgen.php"); ?>
 
-					<a id="itemdetailmore" href="filmwall.php?gen=<?php echo $d['IdGen']?>" title="<?php echo $d['NGen']?>"><?php echo $d['NGen'];?></a>
+					<!-- <a id="itemdetailmore" href="filmwall.php?gen=<?php echo $d['IdGen']?>" title="<?php echo $d['NGen']?>"><?php echo $d['NGen'];?></a> --> 
                 </div>
                 
 		<?php } ?>
-    
+     
