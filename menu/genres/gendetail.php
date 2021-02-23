@@ -15,14 +15,16 @@
               else{ 
                       include("ketnoibh.php");
                       $f=$_GET["id"];
-                      $s="select * from dschool,film,photo where  dschool.IdGen=$f and film.IdF = dschool.IdF and photo.IdF = film.IdF ";
+                      $s="select * from dschool,film,photo where  dschool.IdGen=$f and film.IdF = dschool.IdF and photo.IdF = film.IdF";
                       $kq=mysqli_query($conn,$s) ;
                       
                       ?>
          <!-- this will show keyword of searching -->
          <div class="kqsearch">
 
-            <p1><div id="naofgen"></div></p1>
+            <p1 id="naofgen"><?php $ss="select * from genres where genres.IdGen = $f" ;
+                      $kqq=mysqli_query($conn,$ss) ;
+                      while($dd = mysqli_fetch_assoc($kqq)){ echo $dd['NGen'];}?></p1>
 
          </div>
          <?php
@@ -32,12 +34,12 @@
          <div id="fm" class=" col-6 col-sm-4 col-md-3 col-lg-2 ">
             <a href="filmwall.php?o=<?php echo $d["IdF"];?>" class="linkfilm">
                <div class="showep">
-                  <span><?php echo $d["IdF"]; ?></span>
+                  <span><?php echo $d["IdF"];?></span>
                </div>
                <!-- phan hinh cho anime -->
                <div class="facefilm" 
                   style="background-image:url('<?php echo $d['NameP']; ?>');
-                  background-repeat:no-repeat; 
+                  background-repeat:no-repeagetElementsByTagName('')t; 
                   background-size:cover"></div>
                <!-- ket thuc phan hinh cho anime -->
                <div class="namefilm" >
@@ -57,7 +59,6 @@
 
 
 <script type="text/javascript">
-  //this script will take the text of the menuside then set for the name of gen
-  var xxx = document.getElementsByClassName("itemdetailmore")[0].textContent;
-  document.getElementById('naofgen').innerHTML = xxx + " " + "anime";
+  //this script will set the title of the page
+  document.getElemn
 </script>
