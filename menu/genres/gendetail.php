@@ -22,9 +22,16 @@
          <!-- this will show keyword of searching -->
          <div class="kqsearch">
 
-            <p1 id="naofgen"><?php $ss="select * from genres where genres.IdGen = $f" ;
-                      $kqq=mysqli_query($conn,$ss) ;
-                      while($dd = mysqli_fetch_assoc($kqq)){ echo $dd['NGen'];}?></p1>
+            <p1 id="naofgen">
+
+              <?php $ss="select * from genres where genres.IdGen = $f" ;
+              $kqq=mysqli_query($conn,$ss) ;
+              while($dd = mysqli_fetch_assoc($kqq))
+                { 
+                  echo $dd['NGen']; // this code will query the id of the genre then return the name of the gen 
+                }?>
+                
+            </p1>
 
          </div>
          <?php
@@ -59,6 +66,6 @@
 
 
 <script type="text/javascript">
-  //this script will set the title of the page
-  document.getElemn
-</script>
+  //this script will set the title for the page
+  document.getElementById('tittit').textContent = document.getElementById('naofgen').textContent + " " + "Anime";
+  </script>
