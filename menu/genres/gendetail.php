@@ -68,4 +68,5 @@
 <script type="text/javascript">
   //this script will set the title for the page
   document.getElementById('tittit').textContent = document.getElementById('naofgen').textContent + " " + "Anime";
+  document.getElementById('naofgen').style.color = "#ff8b8b";
   </script>

@@ -12,6 +12,6 @@
 	
 </div>
 <script type="text/javascript">
-	document.getElementById("tittit").innerHTML = "ANIME NOT FOUND !!!";
+	document.getElementById("tittit").textContent = "ANIME NOT FOUND !!!";
 	//this script will change the title of the page to : ANIEME NOT FOUND !!!
 </script>

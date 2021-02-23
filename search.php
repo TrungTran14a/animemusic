@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <link rel="shortcut icon" href="./image/favicon/menu2.png" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  user-scalable=no">
-<link type="text/css" rel="stylesheet" href="bootstrap-4.3.1/dist/css/bootstrap.css" />
+
 <link type="text/css" rel="stylesheet" href="css/total.css?version=1"/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <link type="text/css" rel="stylesheet" href="./css/hover/css/hover.css"  media="all">
@@ -16,14 +16,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="search/auto/jquery.easy-autocomplete.min.js"></script>
-  <script src="code.jquery.com/jquery-1.11.2.min.js"></script>
+  
   
 <style>
 body{
 	background-color:#373737;
 	}
 </style>
-<title>ANIME360</title>
+<title id="tittit">ANIME360</title>
 </head>
 
 <body>
