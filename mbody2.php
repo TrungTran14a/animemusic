@@ -26,7 +26,7 @@
 					else{ 
 									include("ketnoibh.php");
 									$f=$_GET["search"];
-									$s="select * from film,photo where photo.IdF = film.IdF and Namee Like('%$f%') and (Namer Like('%$f%')) ";
+									$s="select * from film,photo where film.IdF = photo.IdF and  (film.Namee Like('%$f%') or film.Namer Like('%$f%') or film.Namej Like('%$f%'))";
 									$kq=mysqli_query($conn,$s) ;
 									
 									?>
